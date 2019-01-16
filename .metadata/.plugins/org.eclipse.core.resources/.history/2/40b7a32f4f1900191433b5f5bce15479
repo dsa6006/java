@@ -1,0 +1,12 @@
+package test;
+
+public class test1_2 {
+	public static void main(String[]args) {
+		int sum = 0, i = 0;
+		do {
+			System.out.println(sum);
+			sum = sum + i;
+			i += 2;
+		} while(i <100);
+	}
+}

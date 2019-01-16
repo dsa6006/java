@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class ex02 {
+	public static void main(String[]args) {
+		int count=0;
+		int sum=0;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("정수를 입력하고 마지막에 -1을 입력하세요.");
+		
+		int n = sc.nextInt();
+		while(n != -1) {
+			sum += n;
+			count++;
+			n = sc.nextInt();
+		}
+		
+		if(count == 0)
+			System.out.println("입력된 정수가 없습니다.");
+		else {
+			System.out.print("정수의 개수는 " + count + "개이며");
+			System.out.println("평균은 " + (double)sum/count + "입니다.");
+		}
+		sc.close();
+	}
+}
+
+//디버깅(debugging) 
+//1)break point(중단점.프로그램을 정지시킴. 전체를 정지시키거나 문제가 있는 부분을 정지시킴.)
+//2)step over(한줄씩 내려감)
+//3)step into(메소드 안으로 들어감), step out(메소드 밖으로 나옴)
+//4)중단 1개 더 추가
+//5)resume

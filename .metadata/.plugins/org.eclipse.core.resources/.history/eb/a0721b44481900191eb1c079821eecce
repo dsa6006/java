@@ -1,0 +1,13 @@
+
+public class check_time1 {
+	public static void main(String[]args) {
+		String str ="*";
+		for(int i = 1; i<6; i++) {//ї­
+			for(int j = 6; j>i; j--) {//За
+				System.out.print(str);
+			}
+			System.out.print(" ");
+			System.out.println();
+		}
+	}
+}
